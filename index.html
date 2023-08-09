@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manda Trends</title>
+    <style>
+        body{
+            max-width:100%;
+            padding:0;
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .fundo{
+            background-color:rgb(242,242,242);
+            width:100%;
+            
+        }
+        .principal{
+            margin: 0 2%;
+            padding-top: 25px;
+            background-color:white;
+            width:96%;
+            
+            
+        }
+        .cabecalho{
+            width:100%;
+            background-image:url("imagens/fundo_cabecalho.jpg");
+            background-repeat:round;
+            background-color: rgb(236,226,214);
+            display:flex;
+            justify-content: space-around;
+            
+        }
+        .mulher_img{
+            margin-top:50px;
+            width:30%;
+        }  
+        .mandaT_img{
+            margin-top:2%;
+            height:100%;
+        }
+        .conteudo{
+            padding:0 3% ;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .noticia{
+            margin-bottom:30px;
+        }
+        .NImagem{
+            width:100%;
+        }
+        .linha{
+            width:50%;
+        }
+        .NPrincipal{
+            width: 100%;
+        }
+        .NSecundaria{
+            max-width: 45%;
+        }
+        .mandarin{
+            background-color:rgb(252,76,1);
+            display:flex;
+            justify-content: space-around;
+        }
+        .logo img{
+            height:85px;
+        }
+        
+        /* @media (max-width:760px) {h1{color:blue;}} */
+        @media (min-width:1000px) {
+            .NPrincipal{
+                width:80%;
+                margin:0 auto;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+
+    <div class="fundo">
+        <div class="principal">
+            <div class="cabecalho">
+                <div class="mandaT_img">
+                    <img src="imagens/mandaTrends.png" alt="Manda Trends" />
+                </div>
+                <div class="mulher_img">
+                    <img src="imagens/mulher.png" alt="Mulher" />
+                </div>
+                <div class="NRF_img">
+                    <img src="imagens/NRF-2020.png" alt="NRF-2020" />
+                </div>
+
+            </div>
+            <div class="conteudo">
+                <div class="noticia NPrincipal">
+                    <img src="imagens/imagem-1.png" class="NImagem" alt="imagem NRF 2020" />
+                    <h2>NRF 2020: Conheça os 5 assuntos do evento</h2>
+                    <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor</p>
+                    <span class="fonte">Fonte: CMO ADOBE</span> <br/>
+                    <img src="imagens/linha-1.png" class="linha" />
+                </div>
+
+                <div class="noticia NSecundaria">
+                    <img src="imagens/imagem-2.png" class="NImagem" alt="imagem NBA e Kobe Bryant" />
+                    <h2>Petição para colocar Kobe Bryant no logo da NBA</h2>
+                    <span class="fonte">Fonte: DALY MAIL</span> <br/>
+                    <img src="imagens/linha-2.png" class="linha" />
+                </div>
+
+                <div class="noticia NSecundaria">
+                    <img src="imagens/imagem-3.png" class="NImagem" alt="whatsapp" />
+                    <h2>Whatsapp terá função de pagamentos em 2020</h2>
+                    <span class="fonte">Fonte: PROXXIMA</span> <br/>
+                    <img src="imagens/linha-3.png" class="linha" />
+                </div>
+            </div>
+            <div class="mandarin">
+                <div class="logo">
+                    <img src="imagens/logo.png" alt="Logo Mandarin" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
