@@ -63,20 +63,62 @@
         .NSecundaria{
             max-width: 45%;
         }
+        p{
+            color:#777;
+        }
+        .fonte{
+            color:#aaa;
+        }
         .mandarin{
             background-color:rgb(252,76,1);
             display:flex;
             justify-content: space-around;
+            height:100px;
+            align-items: center;
         }
         .logo img{
             height:85px;
         }
+        footer{
+            margin:0 2%;
+            width:95%;
+            padding:20px 0;
+            text-align: center;
+            color:#777;
+        }
+        footer a:link{
+            color:#777;
         
+        }
+
         /* @media (max-width:760px) {h1{color:blue;}} */
         @media (min-width:1000px) {
+            .mandaT_img img{
+                width:120%;
+            }
+            .mulher_img img{
+                width:60%;
+            }
+            .NRF_img img{
+                width:130%;
+            }
             .NPrincipal{
                 width:80%;
-                margin:0 auto;
+                margin:0 auto 30px auto;
+            }
+            .NSecundaria{
+                width:30%;
+                margin:0 auto 30px auto;
+            }
+            .mandarin{
+                align-items: center;
+                height: 125px;
+            }
+        }
+        @media (max-width:550px){
+            .mandaT_img img{
+                margin-top:10%;
+                width:95%;
             }
         }
             
@@ -108,16 +150,16 @@
                 </div>
 
                 <div class="noticia NSecundaria">
-                    <img src="imagens/imagem-2.png" class="NImagem" alt="imagem NBA e Kobe Bryant" />
+                    <img src="imagens/imagem-2.jpg" class="NImagem" alt="imagem NBA e Kobe Bryant" />
                     <h2>Petição para colocar Kobe Bryant no logo da NBA</h2>
-                    <span class="fonte">Fonte: DALY MAIL</span> <br/>
+                    <span class="fonte">Fonte: Daily Mail</span> <br/>
                     <img src="imagens/linha-2.png" class="linha" />
                 </div>
 
                 <div class="noticia NSecundaria">
                     <img src="imagens/imagem-3.png" class="NImagem" alt="whatsapp" />
                     <h2>Whatsapp terá função de pagamentos em 2020</h2>
-                    <span class="fonte">Fonte: PROXXIMA</span> <br/>
+                    <span class="fonte">Fonte: Proxxima</span> <br/>
                     <img src="imagens/linha-3.png" class="linha" />
                 </div>
             </div>
@@ -127,8 +169,11 @@
                 </div>
             </div>
         </div>
+        <footer>
+           <span>Copyright ® Mandarin. todos os direitos reservados.
+           <br /> Caso não deseje mais receber nossos e-mails, por vafor <a href="#">clque aqui.</a></span>
+        </footer>
     </div>
 
-    
 </body>
 </html>
