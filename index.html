@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manda Trends</title>
+    <!--Código e imagens disponível em https://github.com/kevinfgr/responsivelayout/ -->
     <style>
         body{
             max-width:100%;
@@ -27,16 +28,18 @@
         }
         .cabecalho{
             width:100%;
-            background-image:url("imagens/fundo_cabecalho.jpg");
+            background-image:url("https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/fundo_cabecalho.jpg?raw=true");
             background-repeat:round;
             background-color: rgb(236,226,214);
             display:flex;
-            justify-content: space-around;
+            /* justify-content: space-around; 
+            Comando não funciona em HTML para e-mail*/
             
         }
         .mulher_img{
             margin-top:50px;
             width:30%;
+            margin:50px auto 0 auto;
         }  
         .mandaT_img{
             margin-top:2%;
@@ -44,9 +47,6 @@
         }
         .conteudo{
             padding:0 3% ;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
         }
         .noticia{
             margin-bottom:30px;
@@ -61,7 +61,15 @@
             width: 100%;
         }
         .NSecundaria{
-            max-width: 45%;
+            max-width: 100%;
+            display: flex;
+            margin:0 auto 30px auto;
+        }
+        .NSecundaria div{
+            width:45%;
+        }
+        .NSEsquerda{
+            margin-right: 20%;
         }
         p{
             color:#777;
@@ -72,13 +80,18 @@
         .mandarin{
             background-color:rgb(252,76,1);
             display:flex;
-            justify-content: space-around;
+            /* justify-content: space-around; */
             height:100px;
-            align-items: center;
+
+        }
+        .logo{
+            margin:0 auto;
         }
         .logo img{
-            height:85px;
+            height:80%;
+            margin-top:2%;
         }
+        
         footer{
             margin:0 2%;
             width:95%;
@@ -90,28 +103,31 @@
             color:#777;
         
         }
-
-        /* @media (max-width:760px) {h1{color:blue;}} */
         @media (min-width:1000px) {
             .mandaT_img img{
                 width:120%;
             }
+            .mulher_img{
+                margin-top:60px;
+            }
             .mulher_img img{
                 width:60%;
             }
+            .NRF_img{
+                padding-right:30px;
+            }
             .NRF_img img{
-                width:130%;
+                width:120%;
             }
             .NPrincipal{
                 width:80%;
                 margin:0 auto 30px auto;
             }
             .NSecundaria{
-                width:30%;
+                width:80%;
                 margin:0 auto 30px auto;
             }
             .mandarin{
-                align-items: center;
                 height: 125px;
             }
         }
@@ -119,6 +135,18 @@
             .mandaT_img img{
                 margin-top:10%;
                 width:95%;
+            }
+            .cabecalho{
+                height:150px;
+            }
+            .mulher_img{
+                margin-top:65px;
+            }
+            .mulher_img img{
+                width:90%;
+            }
+            .NRF_img img{
+                width:100%;
             }
         }
             
@@ -128,50 +156,54 @@
 
     <div class="fundo">
         <div class="principal">
+            
             <div class="cabecalho">
                 <div class="mandaT_img">
-                    <img src="imagens/mandaTrends.png" alt="Manda Trends" />
+                    <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/mandaTrends.png?raw=true" alt="Manda Trends" />
                 </div>
                 <div class="mulher_img">
-                    <img src="imagens/mulher.png" alt="Mulher" />
+                    <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/mulher.png?raw=true" alt="Mulher" />
                 </div>
                 <div class="NRF_img">
-                    <img src="imagens/NRF-2020.png" alt="NRF-2020" />
+                    <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/NRF-2020.png?raw=true" alt="NRF-2020" />
                 </div>
 
             </div>
+    
             <div class="conteudo">
                 <div class="noticia NPrincipal">
-                    <img src="imagens/imagem-1.png" class="NImagem" alt="imagem NRF 2020" />
+                    <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/imagem-1.png?raw=true" class="NImagem" alt="imagem NRF 2020" />
                     <h2>NRF 2020: Conheça os 5 assuntos do evento</h2>
                     <p>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor</p>
                     <span class="fonte">Fonte: CMO ADOBE</span> <br/>
-                    <img src="imagens/linha-1.png" class="linha" />
+                    <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/linha-1.png?raw=true" class="linha" />
                 </div>
 
                 <div class="noticia NSecundaria">
-                    <img src="imagens/imagem-2.jpg" class="NImagem" alt="imagem NBA e Kobe Bryant" />
-                    <h2>Petição para colocar Kobe Bryant no logo da NBA</h2>
-                    <span class="fonte">Fonte: Daily Mail</span> <br/>
-                    <img src="imagens/linha-2.png" class="linha" />
-                </div>
+                    <div class="NSEsquerda">
+                        <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/imagem-2.jpg?raw=true" class="NImagem" alt="imagem NBA e Kobe Bryant" />
+                        <h2>Petição para colocar Kobe Bryant no logo da NBA</h2>
+                        <span class="fonte">Fonte: Daily Mail</span> <br/>
+                        <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/linha-2.png?raw=true" class="linha" />
+                    </div>
 
-                <div class="noticia NSecundaria">
-                    <img src="imagens/imagem-3.png" class="NImagem" alt="whatsapp" />
-                    <h2>Whatsapp terá função de pagamentos em 2020</h2>
-                    <span class="fonte">Fonte: Proxxima</span> <br/>
-                    <img src="imagens/linha-3.png" class="linha" />
+                    <div>
+                        <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/imagem-3.png?raw=true" class="NImagem" alt="whatsapp" />
+                        <h2>Whatsapp terá função de pagamentos em 2020</h2>
+                        <span class="fonte">Fonte: Proxxima</span> <br/>
+                        <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/linha-3.png?raw=true" class="linha" />
+                    </div>
                 </div>
             </div>
             <div class="mandarin">
                 <div class="logo">
-                    <img src="imagens/logo.png" alt="Logo Mandarin" />
+                    <img src="https://github.com/KevinFGR/ResponsiveLayout/blob/main/imagens/logo.png?raw=true" alt="Logo Mandarin" />
                 </div>
             </div>
         </div>
         <footer>
            <span>Copyright ® Mandarin. todos os direitos reservados.
-           <br /> Caso não deseje mais receber nossos e-mails, por vafor <a href="#">clque aqui.</a></span>
+           <br /> Caso não deseje mais receber nossos e-mails, por vafor <a href="#">clique aqui.</a></span>
         </footer>
     </div>
 
